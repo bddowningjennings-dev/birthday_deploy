@@ -1,0 +1,106 @@
+<html>
+  <head>
+    {% load static %}      
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href='{% static "login_app/style.css" %}' />
+    
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="jumbotron nav">
+        <ul class="nav nav-pills">            
+          <li class="nav-item">
+            <a class="nav-link active" href="/">New Person <span class="sr-only">(current)</span></a>
+          </li>
+          <div class="col-md-9"></div>
+        </ul>
+      </div>
+      <div class="row" id="underline">
+          <div class="col-md-1">Jan</div>              
+          <div class="col-md-1">Feb</div>              
+          <div class="col-md-1">Mar</div>              
+          <div class="col-md-1">Apr</div>              
+          <div class="col-md-1">May</div>              
+          <div class="col-md-1">June</div>              
+          <div class="col-md-1">July</div>              
+          <div class="col-md-1">Aug</div>              
+          <div class="col-md-1">Sept</div>              
+          <div class="col-md-1">Oct</div>              
+          <div class="col-md-1">Nov</div>              
+          <div class="col-md-1">Dec</div>              
+      </div><br><br>
+      <div class="row">
+          <div class="col-md-1">
+              {% for user in jan %}
+                {{user.first_name}}
+                {{user.b_date.month}}
+              {% endfor %}
+            </div>
+            <div class="col-md-1">            
+              {% for user in feb %}
+                {{user.first_name}}
+                {{user.b_date.month}}
+              {% endfor %}
+            </div>        
+            <div class="col-md-1">              
+              {% for user in mar %}
+                {{user.first_name}}
+                {{user.b_date.month}}
+              {% endfor %}
+            <div class="col-md-1">              
+              {% for user in apr %}
+                {{user.first_name}}
+                {{user.b_date.month}}
+              {% endfor %}
+            </div>        
+            <div class="col-md-1">              
+              {% for user in may %}
+                {{user.first_name}}
+                {{user.b_date.month}}
+              {% endfor %}
+            </div>        
+            <div class="col-md-1">              
+                {% for user in june %}
+                {{user.first_name}}
+                {{user.b_date.month}}
+              {% endfor %}
+              </div>
+            <div class="col-md-1">
+              {% for user in july %}
+                {{user.first_name}}
+                {{user.b_date.month}}
+              {% endfor %}
+            </div>
+            <div class="col-md-1">            
+              {% for user in aug %}
+                {{user.first_name}}
+                {{user.b_date.month}}
+              {% endfor %}
+            </div>        
+            <div class="col-md-1">              
+              {% for user in sept %}
+                {{user.first_name}}
+                {{user.b_date.month}}
+              {% endfor %}
+            <div class="col-md-1">              
+              {% for user in oct %}
+                {{user.first_name}}
+                {{user.b_date.month}}
+              {% endfor %}
+            </div>        
+            <div class="col-md-1">              
+              {% for user in nov %}
+                {{user.first_name}}
+                {{user.b_date.month}}
+              {% endfor %}
+            </div>        
+            <div class="col-md-1">              
+                {% for user in dec %}
+                {{user.first_name}}
+                {{user.b_date.month}}
+              {% endfor %}
+              </div>            
+    </div>
+  </body>
+</html>

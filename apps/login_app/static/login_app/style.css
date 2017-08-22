@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* outline: thin dashed red; */
+}
+.container {
+  text-align: center;
+  padding-top: 60px;
+}
+input {
+  margin: 10px;
+  width: 100px;
+}
+.form-group {
+  margin-left: 20px;
+}
+.lng {
+  width: 100px;
+}
+.jumbotron.nav {
+  padding: 20px;
+  height: 10px;
+}
+.jumbotron.nav a {
+  margin-top: -20px;
+}
+.jumbotron {
+  height: 25%;
+}
+.nav-space {
+  width: 50%;
+  display: inline-block;
+}
+.nav-item {
+  margin-left: 20px;
+}
+.jumbotron.register {
+  height: 450px;
+}
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #aaa;
+  margin-right: 0.7em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
