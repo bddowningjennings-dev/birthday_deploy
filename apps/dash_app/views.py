@@ -14,7 +14,7 @@ def dash(request):
     'june': User.objects.filter(b_date__month=6),
     'july': User.objects.filter(b_date__month=7),
     'aug': User.objects.filter(b_date__month=8),
-    'sept': User.objects.filter(b_date__month=0),
+    'sept': User.objects.filter(b_date__month=9),
     'oct': User.objects.filter(b_date__month=10),
     'nov': User.objects.filter(b_date__month=11),
     'dec': User.objects.filter(b_date__month=12),
